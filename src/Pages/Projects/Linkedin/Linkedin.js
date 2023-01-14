@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../../Assets/linkedin/image2.png";
-import img2 from "../../../Assets/linkedin/image3.png";
-import img3 from "../../../Assets/linkedin/image1.png";
+import img1 from "../../../Assets/linkedin/image1.png";
+import img2 from "../../../Assets/linkedin/image2.png";
+import img3 from "../../../Assets/linkedin/image3.png";
 import { Link } from "react-router-dom";
 
 const Linkedin = () => {
