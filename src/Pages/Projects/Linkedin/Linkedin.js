@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../../Assets/linkedin/image2.png";
-import img2 from "../../../Assets/linkedin/image3.png";
-import img3 from "../../../Assets/linkedin/image1.png";
+import img1 from "../../../Assets/linkedin/image1.png";
+import img2 from "../../../Assets/linkedin/image2.png";
+import img3 from "../../../Assets/linkedin/image3.png";
 import { Link } from "react-router-dom";
 
 const Linkedin = () => {
@@ -18,7 +18,7 @@ const Linkedin = () => {
           {/* <hr className="w-64 mt-4 ml-[10%] border-[#23D65C] border-2" /> */}
         </span>
       </h1>
-      <div className="border-4 border-[#0A66C2] text-center rounded-3xl bg-[#1D1D1F] md:h-[469px] h-[211px] lg:h-[706px]">
+      <div className="border-4 flex flex-col justify-between  border-[#0A66C2] text-center rounded-3xl bg-[#1D1D1F] aspect-video max-w-[100%] z-30">
         <div>
           <p className="text-[#FFFFFF99] md:text-lg text-[9px] lg:text-3xl mt-10">
             Witness the <span className="text-white">revamped version</span> of
@@ -33,22 +33,24 @@ const Linkedin = () => {
             Know more {`>`}
           </Link>
         </div>
-        <div className="flex flex-col items-center mt-10">
-          <img
-            className="relative w-[50%] lg:w-[75%] -top-5 right-[5rem] md:top-[4.8rem] md:right-[9rem] lg:top-7 lg:right-[9rem] hover:z-20"
-            src={img2}
-            alt=""
-          />
-          <img
-            className="w-[50%] lg:w-[75%] relative -top-[7.2rem] md:-top-[9.6rem] lg:-top-[29.9rem]  z-10"
-            src={img1}
-            alt=""
-          />
-          <img
-            className="w-[50%] lg:w-[75%] relative -top-[12.9rem] left-[5rem] md:-top-[23.4rem] md:left-[9rem] lg:-top-[60.1rem] lg:left-[9rem] hover:z-20 "
-            src={img3}
-            alt=""
-          />
+        <div className="relative  max-w-[100%] aspect-video">
+          <div className="flex justify-center">
+            <img
+              className="absolute bottom-0 max-w-[60%] aspect-video -translate-x-14 hover:z-20 hover:-translate-x-20 md:-translate-x-28 md:hover:-translate-x-32 2xl:-translate-x-32 2xl:hover:-translate-x-36 translate-y-0.5 -rotate-3 scale-90  hover:-translate-y-4 hover:-rotate-6 hover:scale-100 transition-all"
+              src={img1}
+              alt=""
+            />
+            <img
+              className="absolute bottom-0 max-w-[60%] aspect-video z-10 effect scale-110 -translate-y-1.5  sm:-translate-y-2.5 md:-translate-y-3.5 lg:-translate-y-5 hover:scale-[1.15] transition-all"
+              src={img2}
+              alt=""
+            />
+            <img
+              className=" absolute bottom-0 max-w-[60%] aspect-video  translate-x-14 md:translate-x-28 md:hover:translate-x-32 translate-y-0.5 rotate-3 scale-90 hover:translate-x-20 hover:-translate-y-4 hover:rotate-6 hover:scale-100 transition-all hover:z-20 "
+              src={img3}
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
